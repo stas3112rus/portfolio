@@ -1,0 +1,188 @@
+@media (max-width: 1367px){
+    .sidepanel{
+        display: none;
+    }
+}
+
+@media(max-width: 1200px){
+    .container{
+        max-width: 960px;
+    }
+
+    .about__wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about__block{
+        margin-top: 25px;
+        padding: 100px 0px 70px 0px;
+    }
+
+    .experience__wrapper{
+        grid-template-columns: repeat(2, 380px); 
+    }
+
+    .skills__wrapper{
+        grid-template-columns: repeat(3, 270px);
+        justify-content: center;
+    }
+
+    .knowlage{
+        grid-template-columns: repeat(2, 350px); 
+    }
+
+    .contact_main-img{
+        display: none;
+    }
+}
+
+@media(max-width: 992px){
+    .container{
+        max-width: 720px;
+    }
+
+    .btn_wrapper{
+        width: 240px
+    }
+
+    .experience{
+   
+        .container{
+            padding: 0px 0px 0 0px;
+        }
+    }
+
+    .experience__wrapper{
+        grid-template-columns: repeat(1, 550px);
+        justify-content: center; 
+    }
+
+    .skills__wrapper{
+        grid-template-columns: repeat(2, 270px);
+        justify-content: center;
+    }
+
+    .price__wrapper{
+        justify-content: center;
+    }
+}
+
+@media(max-width: 768px){
+    .container{
+        max-width: 540px;
+    }
+
+    .technologi{
+        grid-template-columns: 50px 300px;
+        justify-content: center;
+    }
+
+    .about__img{
+        width: 320px;
+    }
+
+    .about__block{
+        width: 500px;
+    }
+
+    .experience__wrapper{
+        grid-template-columns: repeat(1, 450px); 
+    }
+
+    .knowlage{
+        grid-template-columns: repeat(1, 350px); 
+    }
+
+    .contact__form{
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: repeat (6, minmax(45, auto));
+    }
+    .contact__trigger{
+        grid-column: auto;
+        grid-template-columns: repeat(1, auto);
+        justify-content: center;
+        row-gap: 25px;
+    }
+    .contact__textarea{
+        grid-column-start: auto;
+        grid-column-end: auto;
+        grid-row: auto; 
+    }
+
+    .menu__social{
+        display: none;
+    }
+}
+
+@media(max-width: 576px){
+    .container{
+        max-width: 100%;
+        padding: 0 10px 0 20px;
+    }
+    
+    .promo .title{
+        width: 80%;
+    }
+
+    .about__block{
+        width: 350px;
+        padding: 0px 15px 0px 25px;
+    }
+
+    .experience__wrapper{
+        grid-template-columns: repeat(1, 260px); 
+    }
+
+    .skills__wrapper{
+        grid-template-columns: repeat(1, 270px);
+        justify-content: center;
+    }
+
+    .knowlage{
+        grid-template-columns: repeat(1, 300px); 
+    }
+
+    .about__img {
+        width: 248px;
+    }
+
+    .portfolio__wrapper{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .portfolio_farfor, .portfolio_food, .portfolio_furniture, .portfolio_epvatoriya{
+        grid-column-start: auto;
+        grid-column-end: auto;
+        grid-row-start: auto;
+        grid-row-end: auto;        
+    }
+
+    .contact__col{
+        width: 300px;
+    }
+
+
+}
+
+@media (max-width: 360px){
+    .about__img{
+        display: none;
+    }
+
+    .about__block{
+        width: 100%;
+    }
+
+    .title__fz48{
+        font-size: 36px;
+    }
+    .technologi{
+        grid-template-columns:  250px; 
+    }
+    .technologi__icon{
+        display: none;
+    }
+}

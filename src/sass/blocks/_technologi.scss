@@ -1,0 +1,36 @@
+.technologi{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 50px 250px 50px 250px;
+    grid-template-rows: repeat(2, minmax(120px, auto));
+    row-gap: 20px;
+
+    &__item{
+        padding-right: 50px;
+    }
+
+    &__txt{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #000000;
+    }
+
+    &__icon{
+        position: relative;
+
+        img{
+            position: absolute;
+            top: 15px;
+            left: 7px
+        }
+    }
+
+    &__circle{    
+        position: relative;
+        @include before_circle;      
+    }
+
+
+
+}

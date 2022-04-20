@@ -1,0 +1,37 @@
+@mixin before_circle{
+    &:before {
+        content: "";
+        position: absolute;
+        border-radius: 100%;
+        width: 36px;
+        height: 36px;
+        background: $main-color;
+        z-index: -1;
+        top: -25%;
+        transform: translateX(-12px);
+    }
+
+
+}
+
+@mixin before_menu-link {
+    &:before {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 100%;
+        position: absolute;
+        left: -25px;
+        top: 10px;
+        transition: all 0.1s;
+    }
+
+    &:hover{
+        &:before{
+            background:white;
+        }
+    }
+}

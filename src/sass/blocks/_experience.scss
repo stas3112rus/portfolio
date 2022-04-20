@@ -1,0 +1,123 @@
+.experience{
+   
+    .container{
+        padding: 120px 0px 0 15px;
+    }
+    
+
+   &__subtitle{
+       width:100%;
+       text-align: center;
+       position: relative;
+       @include before_circle;
+       
+       &:before{
+           transform: translateX(13%);
+           top: -5px;
+           left: 50%;
+           transform: translateX(-50%);
+       }
+   }
+   &__line {
+    .short__line{
+        margin: 25px auto;
+       
+    }   
+   
+   }
+
+   &__wrapper{
+       margin-top: 60px;
+       display: grid;
+       grid-template-columns: repeat(2, 425px);
+       column-gap: 135px;
+       justify-content: center; 
+   }
+
+   &__col-title{
+    position: relative;
+    padding-left: 35px;   
+        &:before{
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            background-color: $main-color;
+            left: 0px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+   }
+
+   &__col{
+       ul{
+           list-style: none;
+           li{
+               position: relative;
+               
+               &:after{
+                   content: "";
+                   width: 1px;
+                   height: 100%;
+                   position: absolute;
+                   top: -17px;
+                   left: 7px;
+                   background-color: black;
+               }
+           }
+       }
+   }
+
+   &__item{
+      position: relative;
+      &::before{
+          content: "";
+          height: 1px;
+          width: 43px;
+          background: black;
+          position: absolute;
+          left: 8px;
+          top: 75px;
+          z-index: -3;
+      } 
+   }
+
+   &__item-head{
+       position: relative;
+       padding: 45px 0 0 100px;
+   }
+
+   &__item-body{
+        margin-top: 12px;
+        padding: 0 0 0 43px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+
+        color: black;
+   }
+
+   &__item-icon{
+       position: absolute;
+        top: 55px;
+        left: 55px;
+        @include before_circle;
+
+
+        img{
+            position: absolute;
+            left: 10px;
+            top: 14px;
+        }
+   }
+
+   &_location{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px; 
+    color: #000000;
+   }
+
+    
+}
