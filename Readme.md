@@ -7,5 +7,8 @@ I used:
 - Js ES6+
 - Mailer php for send email
 
+nvm version - 14.17.5
+
+
 
 link: https://stas-yudin.ru/
